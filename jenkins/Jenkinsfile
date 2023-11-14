@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        WTF_CSRF_SECRET_KEY = credentials('WTF_CSRF_SECRET_KEY')
+        // WTF_CSRF_SECRET_KEY = credentials('WTF_CSRF_SECRET_KEY')
         SCANNER_HOME = tool 'SonarQube'
     }
 

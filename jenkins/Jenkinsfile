@@ -42,7 +42,7 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('SonarQube') {
-                    sh "${SCANNER_HOME}/bin/sonar-scanner -Dsonar.projectKey=SSDQuiz -Dsonar.sources=."
+                    sh "${SCANNER_HOME}/bin/sonar-scanner -Dsonar.projectKey=quiz2 -Dsonar.sources=."
                 }
             }
         }

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <!-- Add your CSS here for styling -->
+</head>
+<body>
+    {{error}}
+    <form action="/submit" method="post">
+    <input type="hidden" name="csrf_token" value = "{{ csrf_token() }}" />
+        <div>
+            <label for="Input">Input:</label>
+            <input type="text" id="Input" name="Input" required aria-required="true">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
+
